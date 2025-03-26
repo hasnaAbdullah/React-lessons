@@ -1,8 +1,11 @@
-import { useState } from "react";
+import Text from "../../Lesson-12/composition/Text";
+import Emoji from "../../Lesson-12/composition/Emoji";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>hello</>;
+  return (
+    <>
+      <Emoji>{(addEmoji) => <Text addEmoji={addEmoji} />}</Emoji>
+    </>
+  );
 }
 
 export default App;
